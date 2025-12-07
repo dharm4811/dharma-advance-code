@@ -26,6 +26,7 @@ public class Watchdog {
         lastKick = System.currentTimeMillis();
     }
 
+    /** This will continously run a separate thread to check the monitor task and keep validating last kick with current time */
     private void monitorLoop() {
         while (running) {
             try {
