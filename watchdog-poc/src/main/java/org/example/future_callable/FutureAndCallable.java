@@ -58,6 +58,7 @@ public class FutureAndCallable {
             String result = future.get();
             System.out.println("Result here: "+ result);
         }
+        // Future also allow to cancel a task in middle of its processing, future.cancel(true);
         System.out.println("END");
         service.shutdown();
     }
